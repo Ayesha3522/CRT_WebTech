@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f4f4f4;
+            margin: 50px;
+        }
+        .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+      }
+      img{
+        width: 200px;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        transition: transform 0.5s ease-in-out;
+      }
+      /*bounce the image*/
+      .bounce:hover{
+        transform: scaleX(1.2);
+      }
+      /*rotate the image*/
+      .rotate:hover{
+        transform: rotate(360deg);
+      }
+      /*zoom-in-out*/
+      .zoom-animate{
+        animation: zoomEffect 3s infinite alternate ease-in-out;
+      }
+      @keyframes zoomEffect{
+        0%{transform: scale(1);}
+        100%{transform: scale(1.3);}
+      }
+    </style>
+</head>
+<body>
+    <h1>Simple image animations</h1>
+    <div class="container">
+        <div>
+        <h2>Bouncing the image</h2>
+        <img src="https://1.bp.blogspot.com/-zZJQ4gsZxYQ/Ve7heFkm7PI/AAAAAAAAz64/nmAoTyGqW1s/s1600/Tom%2Band%2BJerry%2BWallpapers20.jpg" alt="bounce" class="bounce">
+    </div>
+    <div>
+        <h2>rotate the image</h2>
+        <img src="https://1.bp.blogspot.com/-zZJQ4gsZxYQ/Ve7heFkm7PI/AAAAAAAAz64/nmAoTyGqW1s/s1600/Tom%2Band%2BJerry%2BWallpapers20.jpg" alt="rotate" class="rotate">
+    </div>
+    <div>
+        <h2>zoom in & out</h2>
+        <img src="https://1.bp.blogspot.com/-zZJQ4gsZxYQ/Ve7heFkm7PI/AAAAAAAAz64/nmAoTyGqW1s/s1600/Tom%2Band%2BJerry%2BWallpapers20.jpg" alt="zoom-animation" class="zoom-animate">
+    </div>
+</div>
+</body>
+</html>
