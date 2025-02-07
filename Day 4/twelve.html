@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            align-items: center;
+            justify-content: center;
+            font-style: italic;
+            padding: 15px;
+            font-size:xx-large;
+            text-align: center;
+        }
+        div{
+            border: 10px solid black;
+            border-radius: 15%;
+        }
+    </style>
+</head>
+<body>
+    <div style="background-color: chartreuse;" onmouseover="one()">Module 1</div><br><br>
+    <div style="background-color: violet;" onmouseover="two()">Module 2</div><br><br>
+    <div style="background-color: orange;" onmouseover="three()">Module 3</div>
+    <script>
+        function one(){
+            window.alert("Module 1 Hovered...!");
+        }
+        function two(){
+            window.alert("Module 2 Hovered");
+        }
+        function three(){
+            window.alert("Module 3 Hovered");
+        }
+    </script>
+</body>
+</html>
